@@ -12,7 +12,7 @@ export default function Home() {
       const response = await fetch('http://localhost:3333/protected', {
         method: 'GET',
         headers: {
-          'Authorization': `Bearer kdjfasdfjasdlfjasdlfjasd`
+          'Authorization': `Bearer ${state.token}`
         }
       })
 
